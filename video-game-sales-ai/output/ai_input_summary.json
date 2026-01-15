@@ -1,0 +1,129 @@
+{
+    "total_global_sales": 8820.360000000002,
+    "top_platforms": [
+        {
+            "Platform": "PS2",
+            "Global_Sales": 1233.46
+        },
+        {
+            "Platform": "X360",
+            "Global_Sales": 969.61
+        },
+        {
+            "Platform": "PS3",
+            "Global_Sales": 949.35
+        },
+        {
+            "Platform": "Wii",
+            "Global_Sales": 909.81
+        },
+        {
+            "Platform": "DS",
+            "Global_Sales": 818.96
+        }
+    ],
+    "top_genres": [
+        {
+            "Genre": "Action",
+            "Global_Sales": 1722.88
+        },
+        {
+            "Genre": "Sports",
+            "Global_Sales": 1309.24
+        },
+        {
+            "Genre": "Shooter",
+            "Global_Sales": 1026.2
+        },
+        {
+            "Genre": "Role-Playing",
+            "Global_Sales": 923.84
+        },
+        {
+            "Genre": "Platform",
+            "Global_Sales": 829.15
+        }
+    ],
+    "top_publishers": [
+        {
+            "Publisher": "Nintendo",
+            "Global_Sales": 1784.43
+        },
+        {
+            "Publisher": "Electronic Arts",
+            "Global_Sales": 1093.39
+        },
+        {
+            "Publisher": "Activision",
+            "Global_Sales": 721.41
+        },
+        {
+            "Publisher": "Sony Computer Entertainment",
+            "Global_Sales": 607.28
+        },
+        {
+            "Publisher": "Ubisoft",
+            "Global_Sales": 473.54
+        }
+    ],
+    "regional_sales": [
+        {
+            "Region": "NA_Sales",
+            "Sales": 4333.43
+        },
+        {
+            "Region": "EU_Sales",
+            "Sales": 2409.12
+        },
+        {
+            "Region": "JP_Sales",
+            "Sales": 1284.3
+        },
+        {
+            "Region": "Other_Sales",
+            "Sales": 789.01
+        }
+    ],
+    "recent_trend": [
+        {
+            "Year": 2009,
+            "Global_Sales": 667.3
+        },
+        {
+            "Year": 2010,
+            "Global_Sales": 600.45
+        },
+        {
+            "Year": 2011,
+            "Global_Sales": 515.99
+        },
+        {
+            "Year": 2012,
+            "Global_Sales": 363.54
+        },
+        {
+            "Year": 2013,
+            "Global_Sales": 368.11
+        },
+        {
+            "Year": 2014,
+            "Global_Sales": 337.05
+        },
+        {
+            "Year": 2015,
+            "Global_Sales": 264.44
+        },
+        {
+            "Year": 2016,
+            "Global_Sales": 70.92999999999999
+        },
+        {
+            "Year": 2017,
+            "Global_Sales": 0.05
+        },
+        {
+            "Year": 2020,
+            "Global_Sales": 0.29
+        }
+    ]
+}
