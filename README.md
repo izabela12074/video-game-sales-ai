@@ -120,7 +120,7 @@ video-game-sales-ai/
 
 ## 🚀 Możliwe rozszerzenia
 
-* integracja z Power BI (walidacja insightów AI),
+* Dalsza integracja z Power BI,
 * cykliczne raportowanie (np. miesięczne).
 
 ---
