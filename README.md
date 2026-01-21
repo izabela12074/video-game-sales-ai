@@ -82,7 +82,7 @@ Projekt demonstruje **praktyczne zastosowanie prompt engineeringu** w analizie d
 
 * skrócenie czasu analizy i raportowania (symulacja procesu),
 * czytelne insighty biznesowe w formie tekstowej,
-* gotowa struktura do integracji z narzędziami BI (np. Power BI).
+* Rezultaty analizy AI zostały zweryfikowane w odniesieniu do dashboardów Power BI.
 
 ---
 
