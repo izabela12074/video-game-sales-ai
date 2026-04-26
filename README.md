@@ -1,121 +1,83 @@
-🤖 Business Reporting Automation with AI (LLM)
-📌 Project Overview
+# 🤖 Automatyzacja Raportowania Biznesowego z AI (LLM)
 
-This project demonstrates how Large Language Models (LLMs) can support a Data Analyst in automatically generating business insights and strategic recommendations based on aggregated sales data.
+> Automatyczne generowanie insightów biznesowych i rekomendacji strategicznych z użyciem modeli językowych | na podstawie danych sprzedażowych gier wideo
 
-The analysis was conducted using a public dataset containing global video game sales data (source: Kaggle).
+## 📌 O projekcie
 
-The project focuses on practical AI integration into the reporting workflow rather than pure model development.
+Projekt demonstruje jak modele językowe (LLM) mogą wspierać analityka danych w automatycznym generowaniu insightów biznesowych i rekomendacji strategicznych na podstawie zagregowanych danych sprzedażowych.
 
-🎯 Business Problem
+Analiza przeprowadzona na publicznym datasecie zawierającym globalne dane sprzedaży gier wideo (źródło: Kaggle). Projekt skupia się na **praktycznej integracji AI w workflow raportowania** – nie na budowie modeli predykcyjnych.
 
-Companies operating globally (e.g., game publishers, digital product companies) must regularly analyze:
+## 🎯 Problem biznesowy
 
-sales trends
+Firmy działające globalnie (np. wydawcy gier, firmy produktów cyfrowych) muszą regularnie analizować:
+- trendy sprzedażowe
+- wydajność platform i produktów
+- różnice regionalne
 
-platform and product performance
+Manualne przygotowanie raportów analitycznych i wniosków strategicznych jest **czasochłonne i trudne do skalowania**. Projekt pokazuje jak AI może przyspieszyć ten proces.
 
-regional differences
+## 🧠 Cele projektu
 
-Manual preparation of analytical reports and strategic conclusions is time-consuming and difficult to scale.
+- Przygotowanie strukturalnych danych sprzedażowych do analizy biznesowej
+- Automatyczne generowanie insightów biznesowych z użyciem AI (LLM)
+- Demonstracja jak AI może przyspieszyć raportowanie i procesy decyzyjne
 
-This project explores how AI can assist in accelerating this process.
+## 🛠️ Zakres prac
 
-🧠 Project Objectives
+### 1️⃣ Przygotowanie i analiza danych (Python)
+- Wczytanie i czyszczenie danych (obsługa brakujących wartości w kolumnie `Year`)
+- Agregacja sprzedaży:
+  - Globalne trendy czasowe
+  - Wydajność platform
+  - Wydajność gatunków
+  - Wydajność wydawców
+  - Sprzedaż regionalna (NA, EU, JP, Other)
 
-Prepare structured sales data for business analysis
+### 2️⃣ Agregacja danych dla AI
+Zamiast przekazywać surowe dane do LLM, przygotowano strukturalne podsumowania biznesowe zawierające:
+- Łączną globalną sprzedaż
+- Top platformy, gatunki i wydawców
+- Porównanie sprzedaży regionalnej
+- Ostatnie trendy sprzedażowe
 
-Automatically generate business insights using AI (LLM)
+Wynik zapisany jako `ai_input_summary.json` – AI otrzymuje czysty, skontekstualizowany input gotowy do analizy biznesowej.
 
-Demonstrate how AI can accelerate reporting and decision-making processes
+### 3️⃣ Analiza biznesowa z AI (LLM)
+Zagregowane dane przekazane do modelu językowego wraz z kontekstem biznesowym. AI wygenerowało:
+- Kluczowe insighty biznesowe
+- Potencjalne ryzyka
+- Rekomendacje strategiczne dla przyszłych premier produktów
 
-🛠 Scope of Work
-1️⃣ Data Preparation & Analysis (Python)
+## 🤖 Rola AI w projekcie
 
-Data loading and cleaning (handling missing values in the Year column)
+W tym projekcie AI pełni rolę **wirtualnego analityka biznesowego** który:
+- Interpretuje dane liczbowe
+- Identyfikuje wzorce i trendy
+- Wspiera podejmowanie decyzji strategicznych
 
-Sales aggregation:
+Projekt demonstruje praktyczne zastosowanie **prompt engineeringu** w workflow analizy danych.
 
-Global time trends
+## 📈 Wyniki
 
-Platform performance
+- Symulowane skrócenie czasu przygotowania raportów
+- Czytelne, strukturalne insighty biznesowe w formacie tekstowym
+- Insighty wygenerowane przez AI zwalidowane względem dashboardów Power BI
+- Projekt ilustruje jak AI może **uzupełniać** tradycyjne narzędzia BI, a nie je zastępować
 
-Genre performance
+## 🧰 Stack technologiczny
 
-Publisher performance
+| Technologia | Zastosowanie |
+|---|---|
+| Python (pandas, numpy) | Przygotowanie i agregacja danych |
+| matplotlib, seaborn | Wizualizacja trendów sprzedażowych |
+| Jupyter Notebook | Środowisko analizy |
+| AI / LLM | Analiza tekstowa, prompt engineering |
+| JSON | Struktura danych wejściowych dla AI |
 
-Regional sales (NA, EU, JP, Other)
+## 📁 Struktura repozytorium
 
-2️⃣ Data Aggregation for AI
-
-Instead of passing raw data to the LLM, structured business summaries were prepared, including:
-
-Total global sales
-
-Top platforms
-
-Top genres
-
-Top publishers
-
-Regional sales comparison
-
-Recent sales trends
-
-The structured output was saved as:
-
-ai_input_summary.json
-
-
-This ensures that the AI receives clean, contextualized, and business-ready input.
-
-3️⃣ AI-Based Business Analysis (LLM)
-
-The aggregated data was provided to the language model together with business context.
-
-The AI generated:
-
-Key business insights
-
-Potential risks
-
-Strategic recommendations for future product releases
-
-🤖 Role of AI in the Project
-
-In this project, AI acts as a virtual business analyst that:
-
-Interprets numerical data
-
-Identifies patterns and trends
-
-Supports strategic decision-making
-
-The project demonstrates practical use of prompt engineering in data analysis workflows.
-
-📈 Results
-
-Simulated reduction in reporting preparation time
-
-Clear, structured business insights in text format
-
-AI-generated insights validated against Power BI dashboards
-
-The project illustrates how AI can complement traditional BI tools rather than replace them.
-
-🧰 Tech Stack
-
-Python (pandas, numpy, matplotlib, seaborn)
-
-Jupyter Notebook
-
-AI / LLM (text analysis, prompt engineering)
-
-JSON
-
-Markdown
-
-📁 Repository Structure
+```
 video-game-sales-ai/
 │
 ├── data/
@@ -127,20 +89,20 @@ video-game-sales-ai/
 ├── output/
 │   ├── ai_input_summary.json
 │   └── ai_business_report.md
-│ 
+│
 ├── prompts/
 │   └── ai_prompt.md
 │
 └── README.md
+```
 
-🚀 Possible Extensions
+## 🚀 Możliwe rozszerzenia
 
-Integration with Power BI dashboards
+- Integracja z dashboardami Power BI
+- Automatyczne cykliczne raportowanie (np. aktualizacje miesięczne)
+- Wdrożenie jako wewnętrzny asystent raportowania
 
-Automated recurring reporting (e.g., monthly updates)
+## 👩‍💻 Autor
 
-Deployment as an internal reporting assistant
-
-👩‍💻 Author
-
-Created as part of a Data Analyst / AI-focused portfolio project, demonstrating practical AI integration in business analytics.
+**Izabela Popiołek** – Specjalista ds. Digitalizacji | Power BI Developer | AI Analyst  
+[LinkedIn](https://linkedin.com/in/izabela-popiolek) | [GitHub](https://github.com/izabela12074)
